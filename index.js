@@ -28,12 +28,14 @@ rollBtn.addEventListener('click', function() {
         player1Score += randomNumber
         player1Dice.textContent = randomNumber
         player1Scoreboard.textContent = player1Score
+        message.textContent = "Player 2 Turn"
         player1Dice.classList.remove('active')
         player2Dice.classList.add('active')
     } else {
         player2Score += randomNumber
         player2Dice.textContent = randomNumber
         player2Scoreboard.textContent = player2Score
+        message.textContent = "Player 1 Turn"
         player2Dice.classList.remove('active')
         player1Dice.classList.add('active')
     }
